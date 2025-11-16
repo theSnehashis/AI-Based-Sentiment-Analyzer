@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Enter text to analyze sentiment</h2>
+<form method="post" action="{{ url_for('predict') }}">
+  <textarea name="text" rows="6" placeholder="Paste a review, tweet, or comment..." required></textarea>
+  <br />
+  <button type="submit">Analyze</button>
+</form>
+{% endblock %}

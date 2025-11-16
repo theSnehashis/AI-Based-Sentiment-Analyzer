@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Recent Predictions</h2>
+{% if items %}
+<table>
+  <tr><th>When</th><th>Label</th><th>Score</th><th>Text (preview)</th></tr>
+  {% for it in items %}
+  <tr>
+    <td>{{ it.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+    <td>{{ it.label }}</td>
+    <td>{{ it.score }}</td>
+    <td>{{ it.text[:120] }}{% if it.text|length > 120 %}...{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+<p>No records yet.</p>
+{% endif %}
+{% endblock %}

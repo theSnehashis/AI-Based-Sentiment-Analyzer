@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sentiment Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="{{ url_for('index') }}">Sentiment Analyzer</a></h1>
+      <nav><a href="{{ url_for('index') }}">Home</a> | <a href="{{ url_for('history') }}">History</a></nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <small>Demo • Hugging Face model • Local SQLite logging</small>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background:#f6f8fa; color:#111; }
+.container { max-width:800px; margin:30px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07);}
+header h1 { margin:0; font-size:24px;}
+textarea { width:100%; font-size:14px; padding:10px; border-radius:6px; border:1px solid #ddd; }
+button { background:#0366d6; color:white; padding:8px 14px; border:none; border-radius:6px; cursor:pointer; }
+table { width:100%; border-collapse: collapse; margin-top:10px; }
+table th, table td { padding:8px; border:1px solid #eee; text-align:left; }
+blockquote { background:#f1f8ff; padding:10px; border-left:4px solid #0366d6; }

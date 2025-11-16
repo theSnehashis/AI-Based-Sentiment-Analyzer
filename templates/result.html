@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Result</h2>
+<p><strong>Text:</strong></p>
+<blockquote>{{ text }}</blockquote>
+<p><strong>Label:</strong> {{ label }}</p>
+<p><strong>Confidence:</strong> {{ "%.2f"|format(score) }}</p>
+<p><a href="{{ url_for('index') }}">Analyze another</a> | <a href="{{ url_for('history') }}">View history</a></p>
+{% endblock %}
